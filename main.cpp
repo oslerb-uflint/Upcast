@@ -87,7 +87,7 @@ int main() {
     int choice;
     std::unique_ptr<Circle> object;
     // created a smart pointer currently set to nullptr
-    // deleted when the object it points to goes out of scope
+    // deletes when the object it points to goes out of scope
     std::cout <<"Select an object:\n1.Cylinder\n2.Cone\n3.Sphere\nSelect:";
     std::cin >> choice;
     if (choice == 1) {
@@ -123,9 +123,6 @@ int main() {
     std::cout << object->getVolume() << std::endl;
 
     // Memory safe because we used smart pointers
-
-
-
 
 
     object->calcVolume();
